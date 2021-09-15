@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Comfortaa:wght@300;400;500;600;700&display=swap");
+
+body {
+  background-color: rgb(255, 255, 255);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.auth-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #081229;
+  /* font-family: "Comfortaa", cursive; */
+  font-family: Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.auth-wrapper form {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.auth-wrapper h1 {
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(79, 98, 148);
+}
+
+.auth-wrapper .form {
+  background: #0e101c;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.auth-wrapper p {
+  color: #bf1650;
+}
+
+.auth-wrapper p::before {
+  display: inline;
+  content: "\26A0";
+}
+
+.auth-wrapper input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  /* border: 1px solid black; */
+  margin-bottom: 20px;
+  font-size: 14px;
+  background-color: #191d3a;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px;
+  font-weight: 200;
+}
+
+.auth-wrapper label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 13px;
+  margin-top: 15px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.auth-wrapper button[type="submit"],
+.auth-wrapper input[type="submit"] {
+  background: #ff3d84;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 6px;
+  font-weight: 400;
+  margin-bottom: 0;
+  outline: none;
+}
+
+.auth-wrapper button[type="submit"]:hover,
+.auth-wrapper input[type="submit"]:hover {
+  background: #bf1650;
+}
+
+.auth-wrapper button[type="submit"]:active,
+.auth-wrapper input[type="button"]:active,
+.auth-wrapper input[type="submit"]:active {
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid transparent;
+  opacity: 0.8;
+}
+
+.auth-wrapper input:disabled {
+  opacity: 0.4;
+}
+
+.auth-wrapper input[type="button"]:hover {
+  transition: 0.3s all;
+}
+
+.auth-wrapper button[type="submit"],
+.auth-wrapper input[type="button"],
+.auth-wrapper input[type="submit"] {
+  -webkit-appearance: none;
+}
+
+.title {
+  margin-bottom: 50px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button[type="button"] {
+  display: block;
+  appearance: none;
+  background: #333;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+hr {
+  margin-top: 30px;
+}
+
+button {
+  display: block;
+  appearance: none;
+  margin-top: 40px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 4px;
 }
